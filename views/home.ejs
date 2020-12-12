@@ -10,7 +10,7 @@
                 <%= element.title %>
             </h1>
             <p>
-                <%= element.content %>
+                <%= element.content.substr(0, 100) %> ... <a href="/posts/<%=element.title %>">Read More</a>
             </p>
             <% }) %>
         </div>
