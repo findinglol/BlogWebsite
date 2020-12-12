@@ -4,4 +4,14 @@
     <p>
         <%= homeStartingContent %>
     </p>
-    <% include partials/footer %>
+    <% posts.forEach(element=> { %>
+        <div>
+            <h1>
+                <%= element.title %>
+            </h1>
+            <p>
+                <%= element.content %>
+            </p>
+            <% }) %>
+        </div>
+        <% include partials/footer %>
